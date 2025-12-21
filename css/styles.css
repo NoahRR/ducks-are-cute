@@ -1,0 +1,276 @@
+* {
+    font-family: Heebo, sans-serif;
+    color: #383838 !important;
+    line-height: 30px;
+	font-size: 16px;
+}
+
+body {
+    background-color: yellow;
+}
+.whole-page {
+    background-color: #FFE28D;
+
+background: rgb(255,231,160);
+background: linear-gradient(157deg, rgba(255,231,160,1) 16%, rgba(255,209,82,1) 100%, rgba(255,209,82,1) 100%);
+
+/* background: #FFE38D;
+background: -webkit-linear-gradient(top left, #FFE38D, #FFD152);
+background: -moz-linear-gradient(top left, #FFE38D, #FFD152);
+background: linear-gradient(to bottom right, #FFE38D, #FFD152); */
+
+    height: 100vh;
+    width: 100vw;
+    /* overflow: hidden; */
+}
+.big-left-col {
+    text-align: left;
+    font-weight: 300;
+    font-size: 17px;
+    padding: 200px 0 0 0;
+}
+.big-left-col h2 {
+    font-size: 3.8em;
+    font-weight: 700;
+    color: #202020 !important;
+}
+.big-left-col p {
+    padding: 20px 0 0 0;
+}
+.big-left-col button {
+    margin-bottom: 20px;
+}
+.big-left-col span {
+    padding-top: 25px;
+    font-size: 15px !important;
+}
+.my-btn-style {
+    padding: 5px 15px;
+    height: auto;
+    width: auto;
+    border-radius: 6px;
+    display: inline;
+    outline: none !important;
+    border: none;
+    margin-left: 13px;
+    background-color: #FFD65F;
+  
+    font-size: 16px;
+  
+    background-color: rgb(24, 24, 24) !important;
+    /* background-color: #e05718; */
+    color: white !important;
+    z-index: 10;
+    transition: background-color .3s, color .3s;
+	
+	font-size: .8em !important;
+}
+.my-btn-style:hover {
+    background-color: orange !important;
+    color: black;
+}
+.my-btn-style-invert {
+    padding: 0;
+    height: auto;
+    width: auto;
+    border-radius: 6px;
+    display: inline;
+    outline: none !important;
+    border: none;
+    margin-left: 15px;
+    background-color: #ffbf00;
+    font-size: 16px;
+    background-color: transparent !important;
+    color: black;
+    z-index: 10;
+    transition: color .1s;
+}
+.my-btn-style-invert:hover {
+    color: orange !important;
+}
+.header-vert-center {
+    margin-top: 30px !important;
+    transform: translateY(-50%);
+    margin: 0 50px;
+}
+
+.custom-error-msg-orange {
+    display: none;
+    margin-top: -30px;
+    color: orange !important;
+    font-weight: 700;
+	font-size: .85em;
+}
+.custom-error-msg-red {
+    display: none;
+    margin-top: -30px;
+    color: rgb(255, 56, 56) !important;
+    font-weight: 700;
+	font-size: .85em;
+}
+.custom-error-msg-green {
+    color: green !important;
+    font-weight: 700;
+    margin-top: -30px;
+    display: none;
+	font-size: .85em;
+}
+
+#loading {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    border: 2px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin .5s ease-in-out infinite;
+    -webkit-animation: spin .5s ease-in-out infinite;
+    background-color: rgb(24, 24, 24);
+    position: absolute;
+    margin-left: -60px;
+    margin-top: 9px;
+    display: none;
+}
+
+@keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+}
+
+.my-btn-style-load {
+    padding: 5px 15px;
+    height: auto;
+    width: auto;
+    border-radius: 6px;
+    display: inline;
+    outline: none !important;
+    border: none;
+    margin-left: 13px;
+    background-color: #FFD65F;
+    font-size: 16px;
+    background-color: rgb(24, 24, 24) !important;
+    color: rgb(24, 24, 24) !important;
+	font-size: .8em !important;
+}
+.my-btn-style-load:hover {
+    background-color: rgb(24, 24, 24) !important;
+    color: rgb(24, 24, 24) !important;
+}
+#mobile-view-main-content {
+    width: 90vw;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    /* outline: 2px solid pink; */
+}
+.mobile-header-titles {
+    font-size: 4em;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+    line-height: .7em;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 1400px) {
+    #desktop-blob-main {
+        right: -120px !important;
+    }
+}
+@media only screen and (min-width: 993px) {
+    .mobile-only {
+        display: none;
+    }
+}
+@media only screen and (max-width: 992px) {
+    #example-newsletter-col {
+        display: none;
+    }
+}
+@media only screen and (min-width: 480px) { /* DESKTOP DISPLAY */
+    #mobile-view-main-content {
+        display: none;
+    }
+    .mailchimp_form_things {
+        margin-top: 0 !important;
+    }
+}
+@media only screen and (max-width: 480px) { /* START MOBILE DISPLAY */
+    #main-content {
+        display: none;
+    }
+    #top-header-home-link {
+        display: none;
+    }
+    #mobile-view-main-content {
+        display: unset;
+    }
+    #check-out-my-other-work{
+        float: left;
+        display: none;
+    }
+    #loading {
+        margin-top: 24px;
+    }
+    .all-return-msg-mailchimp-submit {
+        margin-top: 15px !important;
+        margin-bottom: 0 !important;
+    }
+}
+@media only screen and (max-width: 380px) {
+    #mc_embed_signup_scroll {
+        width: auto !important;
+    }
+    #mce-EMAIL {
+        width: 100%;
+    }
+    #mc-embedded-subscribe {
+        width: 100% !important;
+    }
+    #subscribe-btn-mobile-wrapper {
+        width: 100%;
+    }
+    #mobile-main-content-text {
+        width: 100% !important;
+    }
+    #mobile-cancel-anytime {
+        padding-top: 55px !important;
+    }
+    #mobile-buzz-bee {
+        margin-left: 20vw !important;
+    }
+    #loading {
+        margin-top: 78px;
+        margin-left: -50vw;
+    }
+}
+@media only screen and (max-width: 330px) {
+    #mobile-view-main-content {
+        font-size: 15px;
+    }
+    .mc-field-group {
+        font-size: 13px;
+    }
+    #mc-embedded-subscribe {
+        font-size: 12px !important;
+    }
+}
+@media only screen and (max-width: 300px) {
+    #mobile-view-main-content {
+        font-size: 4vw;
+    }
+    .mc-field-group {
+        font-size: 4vw;
+    }
+    #mc-embedded-subscribe {
+        font-size: 4vw !important;
+    }
+    #mobile-buzz-bee {
+        margin-left: 0 !important;
+    }
+}
