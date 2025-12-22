@@ -10,3 +10,25 @@ window.addEventListener('DOMContentLoaded',function(){
     }
 
 },false);
+
+// COUNTER BTN
+const counterEl = document.getElementById("counter");
+const btn = document.getElementById("increment-btn");
+
+btn.addEventListener("click", async () => {
+try {
+    const resp = await fetch("/increment", {
+        method: "POST",
+        headers: { "Accept": "application/json" }
+    });
+
+    if (!resp.ok) {
+        throw new Error(`Request failed: ${resp.status}`);
+    }
+
+    const data = await resp.json();
+    counterEl.textContent = data.value;
+
+} catch (err) {
+    console.error(err);}
+});
