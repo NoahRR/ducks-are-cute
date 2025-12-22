@@ -42,10 +42,10 @@ background: linear-gradient(to bottom right, #FFE38D, #FFD152); */
 .big-left-col button {
     margin-bottom: 20px;
 }
-.big-left-col span {
+/* .big-left-col span {
     padding-top: 25px;
     font-size: 15px !important;
-}
+} */
 .my-btn-style {
     padding: 5px 15px;
     height: auto;
@@ -55,7 +55,7 @@ background: linear-gradient(to bottom right, #FFE38D, #FFD152); */
     outline: none !important;
     border: none;
     margin-left: 13px;
-    background-color: #FFD65F;
+    background-color: #0aca4a;
   
     font-size: 16px;
   
@@ -68,8 +68,7 @@ background: linear-gradient(to bottom right, #FFE38D, #FFD152); */
 	font-size: .8em !important;
 }
 .my-btn-style:hover {
-    background-color: orange !important;
-    color: black;
+    background-color: #064f1e !important;
 }
 .my-btn-style-invert {
     padding: 0;

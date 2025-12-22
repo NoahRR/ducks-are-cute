@@ -69,34 +69,6 @@
         <div class="container">
           <div class="row">
 
-            <!-- MAILCHIMIP SIGNUP FORM -->
-            <div id="mc_embed_signup" style="display: none;">
-              <form action="https://buzz.us6.list-manage.com/subscribe/post-json?u=dfc56e3d8beaa4ad068e9e5e1&amp;id=619c7f73dc&c=?" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="">
-                  <div id="mc_embed_signup_scroll" style="width: 450px;">
-      
-                    <p class="custom-error-msg-green all-return-msg-mailchimp-submit">Welcome to the hive! You should recieve a confirmation email shortly.</p>
-                    <p class="custom-error-msg-orange all-return-msg-mailchimp-submit"></p>
-                    <p class="custom-error-msg-red all-return-msg-mailchimp-submit"></p>
-      
-                    <div class="mc-field-group">
-                      <input type="email" value="" name="EMAIL" class="required email mailchimp_form_things" id="mce-EMAIL" style="float: left; user-select: none; padding: 5px 15px; border-radius: 6px; outline: none; border: none; display: inline; font-size: 1em; margin-top: 15px; margin-right: 15px;" placeholder="email address">
-                    </div>
-      
-                    <div id="mce-responses" class="clear">
-                      <div class="response" id="mce-error-response" style="display:none"></div>
-                      <div class="response" id="mce-success-response" style="display:none"></div>
-                    </div>
-                    
-                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_dfc56e3d8beaa4ad068e9e5e1_619c7f73dc" tabindex="-1" value=""></div>
-                    
-                  <div id="subscribe-btn-mobile-wrapper" class="clear mailchimp_form_things" style="display: inline; float: left; font-size: 1em; margin-top: 15px;"><input type="submit" value="Sign Me Up!" name="subscribe" id="mc-embedded-subscribe" class="button my-btn-style" style="margin-left: 0;"></div>
-                  <div id="loading"></div>
-      
-                </div>
-              </form>
-            </div>
-
             <!-- MOBILE VIEW MAIN CONTENT -->
             <div id="mobile-view-main-content">
                 <h1 class="mobile-header-titles" style="display: block; float: left;">Are ducks cute?</h1>
@@ -105,10 +77,6 @@
                 <img id="mobile-buzz-bee" class="mobile-only" style="height: 115px; position: absolute; margin-left: 40vw; margin-top: -130px; user-select: none; cursor: pointer; transform: rotate(-12deg) !important; z-index: -100 !important;" src="{{ url_for('static', filename='images/bee-official-path.png') }}" alt="image">
 
                 <p id="mobile-main-content-text" style="line-height: 19px !important; font-size: .80em; margin-top: 150px; width: 80%; width: 317px; background-color: #d1ffc5; padding: 16px 20px 15px 20px; border-radius: 6px; margin-bottom: 0px;">Click this button <asdf style="height: 5px; line-height: 5px; background-color: #00ff55; padding: 0 2px; font-size: 1em; line-height: 19px !important;">if you think ducks are cute</asdf>!!! <b style="font-weight: 600; font-size: 1em; line-height: 19px !important;">Let's see how high we can go :)</b></p>
-
-                <!-- Begin Mailchimp Signup Form -->
-                <div id="mobile-mailchimp-signup-wrapper"></div>
-                <!--End mc_embed_signup-->
 
                   <br><br><span id="mobile-cancel-anytime" class="new-font-color" style="display: block; margin-top: 5px; font-size: .75em !important;"><b style="font-weight: 600; font-size: 1em;">Free Forever.</b> Cancel Anytime.</span>
 
@@ -120,7 +88,7 @@
 
             <!-- DESKTOP VIEW MAIN CONTENT -->
             <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-10 order-lg-1 order-1 aos-init aos-animate" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" style="width: 460px; padding-left: 55px;" id="main-content">
-              <div class="content big-left-col" style="margin-top: 280px; padding: 0;">
+              <div class="content big-left-col" style="margin-top: 250px; padding: 0;">
 
                 <div class="image-3">
                     <img id="mobile-buzz-bee" class="mobile-only" style="height: 115px; position: absolute; margin-left: 40vw; margin-top: -130px; user-select: none; cursor: pointer; transform: rotate(-12deg) !important;" src="{{ url_for('static', filename='images/bee-official-path.png') }}" alt="image">
@@ -128,18 +96,18 @@
   
                 <!-- <h2 class="new-font-color">Ducks are cute<span style="font-size: .25em !important; font-weight: 300;" class="new-font-color">.com</span> </h2> -->
                 <h2 class="new-font-color">Are ducks cute?<span style="font-size: .25em !important; font-weight: 300;" class="new-font-color"></span> </h2>
+                <!-- <h2 class="new-font-color">Global Counter: <h2 id="counter">{{ counter }}</h2></h2> -->
 
-				  
-				        <p style="line-height: 19px; font-size: .80em; margin-top: -20px;">Click this button <asdf style="height: 5px; line-height: 5px; background-color: #00ff55; padding: 0 2px; font-size: 1em;">if you think ducks are cute</asdf>!!! <b style="font-weight: 600; font-size: 1em;">Let's see how high we can go :)</b></p>
+				        <!-- <p style="line-height: 19px !important; font-size: .90em; width: 80%; width: 317px; background-color: #d1ffc5; padding: 16px 20px 15px 20px; border-radius: 6px; margin-bottom: 0px; font-weight: 400;"><asdf style="height: 5px; line-height: 5px; padding: 0 2px; font-size: 1em; line-height: 19px !important;">GLOBAL DUCKS-ARE-CUTE COUNTER: </asdf><b style="font-weight: 600; font-size: 1em; line-height: 19px !important;"><span id="counter">{{ counter }}</span></b></p> -->
 
-                <h1>Counter: <span id="counter">{{ counter }}</span></h1>
-                <button id="increment-btn" type="button">+1</button>
-                
-                <!-- Begin Mailchimp Signup Form -->
-                <div id="desktop-mailchimp-signup-wrapper"></div>
-                <!--End mc_embed_signup-->
-                
-                <br><span class="new-font-color" style="display: block; margin-top: 5px; font-size: .75em !important;"><b style="font-weight: 600; font-size: 1em;">Free Forever.</b> Cancel Anytime.</span>
+				        <!-- <p style="line-height: 19px; font-size: .90em; margin-top: -20px; font-weight: 400;"><asdf style="height: 5px; line-height: 5px; background-color: #0aca4a; padding: 4px 5px; font-size: 1em; border-radius: 3px;">GLOBAL DUCKS-ARE-CUTE COUNTER: <b style="font-weight: 600; font-size: 1em;"><span id="counter">{{ counter }}</span></b></asdf><b style="font-weight: 600; font-size: 1em;"></b></p> -->
+
+				        <p style="line-height: 19px; font-size: .90em; margin-top: -20px; font-weight: 400;"><asdf style="height: 5px; line-height: 5px; background-color: #0aca4a; padding: 4px 5px; font-size: 1em; border-radius: 3px;"><b style="font-weight: 600; font-size: 1em;"><span id="counter">{{ counter }}</span> votes say so.</b></asdf> Agree? <b style="font-weight: 600; font-size: 1em;"></b></p>
+
+                <!-- <input type="submit" value="Ugly!" name="subscribe" class="button my-btn-style" style="margin-left: 0;"> -->
+                <input type="submit" id="increment-btn" value='Ducks Are Cute Button' name="subscribe" class="button my-btn-style" style="margin-left: 0;">
+              
+                <br><span class="new-font-color" style="display: block; margin-top: 5px; font-size: .75em !important;"><b style="font-weight: 600; font-size: 1em;">Disclaimer: </b> the button WILL quack!</span>
 
                 <div class="image-3">
                     <img id="mobile-honey-comb" class="mobile-only" style="height: 250px; position: absolute; left: -20vw; opacity: .5; user-select: none;" src="{{ url_for('static', filename='images/honeycomb.png') }}" alt="image">

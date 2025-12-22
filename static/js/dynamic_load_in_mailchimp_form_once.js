@@ -28,10 +28,10 @@ function set_correct_mail_chimp_form() {
 
 // ON DOM LOAD
 window.addEventListener('DOMContentLoaded',function(){
-    set_correct_mail_chimp_form();
+    // set_correct_mail_chimp_form();
 },false);
 
 // ON BROWSER RESIZE - only if not on android - causes keyboard issues
 if (!/Android/i.test(navigator.userAgent)) {
-	window.onresize = set_correct_mail_chimp_form;
+	// window.onresize = set_correct_mail_chimp_form;
 }
