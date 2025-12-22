@@ -11,8 +11,10 @@ body {
 .whole-page {
     background-color: #FFE28D;
 
-background: rgb(255,231,160);
-background: linear-gradient(157deg, rgba(255,231,160,1) 16%, rgba(255,209,82,1) 100%, rgba(255,209,82,1) 100%);
+/* background: rgb(255,231,160);
+background: linear-gradient(157deg, rgba(255,231,160,1) 16%, rgba(255,209,82,1) 100%, rgba(255,209,82,1) 100%); */
+background: rgb(148, 213, 133);
+background: linear-gradient(157deg, rgb(197, 249, 187) 16%, rgb(166, 238, 103) 100%, rgb(56, 143, 57) 100%);
 
 /* background: #FFE38D;
 background: -webkit-linear-gradient(top left, #FFE38D, #FFD152);
