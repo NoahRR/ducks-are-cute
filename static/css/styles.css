@@ -63,12 +63,12 @@ background: linear-gradient(to bottom right, #FFE38D, #FFD152); */
     /* background-color: #e05718; */
     color: white !important;
     z-index: 10;
-    transition: background-color .3s, color .3s;
+    transition: background-color .2s, color .3s;
 	
 	font-size: .8em !important;
 }
 .my-btn-style:hover {
-    background-color: #064f1e !important;
+    background-color: #0a5e26 !important;
 }
 .my-btn-style-invert {
     padding: 0;
@@ -87,7 +87,7 @@ background: linear-gradient(to bottom right, #FFE38D, #FFD152); */
     transition: color .1s;
 }
 .my-btn-style-invert:hover {
-    color: orange !important;
+    color: #179b43 !important;
 }
 .header-vert-center {
     margin-top: 30px !important;
