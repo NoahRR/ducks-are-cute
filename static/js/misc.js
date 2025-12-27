@@ -11,10 +11,11 @@ window.addEventListener('DOMContentLoaded',function(){
 
 },false);
 
-// COUNTER BTN
+// Counter Buttons
 const counterEl = document.getElementById("counter");
 const btn = document.getElementById("increment-btn");
-
+const mobile_counterEl = document.getElementById("mobile-counter");
+const mobile_btn = document.getElementById("mobile-increment-btn");
 btn.addEventListener("click", async () => {
 try {
     const resp = await fetch("/increment", {
@@ -27,6 +28,25 @@ try {
     }
 
     const data = await resp.json();
+    counterEl.textContent = data.value;
+    mobile_counterEl.textContent = data.value;
+
+} catch (err) {
+    console.error(err);}
+});
+mobile_btn.addEventListener("click", async () => {
+try {
+    const resp = await fetch("/increment", {
+        method: "POST",
+        headers: { "Accept": "application/json" }
+    });
+
+    if (!resp.ok) {
+        throw new Error(`Request failed: ${resp.status}`);
+    }
+
+    const data = await resp.json();
+    mobile_counterEl.textContent = data.value;
     counterEl.textContent = data.value;
 
 } catch (err) {
