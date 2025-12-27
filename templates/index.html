@@ -71,46 +71,22 @@
 
             <!-- MOBILE VIEW MAIN CONTENT -->
             <div id="mobile-view-main-content">
-                <h1 class="mobile-header-titles" style="display: block; float: left;">Are ducks cute?</h1>
+                <h1 class="mobile-header-titles" style="display: block; float: left; line-height: 70px; margin-bottom: 10px;">are ducks cute?</h1>
                 <!-- <h1 class="mobile-header-titles" style="display: block; float: right; color: orange !important;">.com</h1> -->
 
                 <img id="mobile-buzz-bee" class="mobile-only" style="height: 115px; position: absolute; margin-left: 40vw; margin-top: -130px; user-select: none; cursor: pointer; transform: rotate(-12deg) !important; z-index: -100 !important;" src="{{ url_for('static', filename='images/bee-official-path.png') }}" alt="image">
 
-                <p id="mobile-main-content-text" style="line-height: 19px !important; font-size: .80em; margin-top: 150px; width: 80%; width: 317px; background-color: #d1ffc5; padding: 16px 20px 15px 20px; border-radius: 6px; margin-bottom: 0px;">Click this button <asdf style="height: 5px; line-height: 5px; background-color: #00ff55; padding: 0 2px; font-size: 1em; line-height: 19px !important;">if you think ducks are cute</asdf>!!! <b style="font-weight: 600; font-size: 1em; line-height: 19px !important;">Let's see how high we can go :)</b></p>
+                <!-- <p id="mobile-main-content-text" style="line-height: 19px !important; font-size: .80em; margin-top: 150px; width: 80%; width: 317px; background-color: #d1ffc5; padding: 16px 20px 15px 20px; border-radius: 6px; margin-bottom: 0px;"><asdf style="height: 5px; line-height: 5px; background-color: #00ff55; padding: 0 2px; font-size: 1em; line-height: 19px !important;">124 confirmed votes</asdf><b style="font-weight: 600; font-size: 1em; line-height: 19px !important;"></b></p> -->
 
-                  <br><br><span id="mobile-cancel-anytime" class="new-font-color" style="display: block; margin-top: 5px; font-size: .75em !important;"><b style="font-weight: 600; font-size: 1em;">Free Forever.</b> Cancel Anytime.</span>
-
-                  <div class="image-3">
-                      <img id="mobile-honey-comb" class="mobile-only" style="height: 250px; margin-top: 15px; position: absolute; left: -20vw; opacity: .5; user-select: none;" src="{{ url_for('static', filename='images/honeycomb.png') }}" alt="image">
-                  </div>
-
-            </div>
-
-            <!-- DESKTOP VIEW MAIN CONTENT -->
-            <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-10 order-lg-1 order-1 aos-init aos-animate" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" style="width: 460px; padding-left: 55px;" id="main-content">
-              <div class="content big-left-col" style="margin-top: 250px; padding: 0;">
-
-                <div class="image-3">
-                    <img id="mobile-buzz-bee" class="mobile-only" style="height: 115px; position: absolute; margin-left: 40vw; margin-top: -130px; user-select: none; cursor: pointer; transform: rotate(-12deg) !important;" src="{{ url_for('static', filename='images/bee-official-path.png') }}" alt="image">
-                </div>
-  
-                <!-- <h2 class="new-font-color">Ducks are cute<span style="font-size: .25em !important; font-weight: 300;" class="new-font-color">.com</span> </h2> -->
-                <h2 class="new-font-color">Are ducks cute?<span style="font-size: .25em !important; font-weight: 300;" class="new-font-color"></span> </h2>
-                <!-- <h2 class="new-font-color">Global Counter: <h2 id="counter">{{ counter }}</h2></h2> -->
-
-				        <!-- <p style="line-height: 19px !important; font-size: .90em; width: 80%; width: 317px; background-color: #d1ffc5; padding: 16px 20px 15px 20px; border-radius: 6px; margin-bottom: 0px; font-weight: 400;"><asdf style="height: 5px; line-height: 5px; padding: 0 2px; font-size: 1em; line-height: 19px !important;">GLOBAL DUCKS-ARE-CUTE COUNTER: </asdf><b style="font-weight: 600; font-size: 1em; line-height: 19px !important;"><span id="counter">{{ counter }}</span></b></p> -->
-
-				        <!-- <p style="line-height: 19px; font-size: .90em; margin-top: -20px; font-weight: 400;"><asdf style="height: 5px; line-height: 5px; background-color: #0aca4a; padding: 4px 5px; font-size: 1em; border-radius: 3px;">GLOBAL DUCKS-ARE-CUTE COUNTER: <b style="font-weight: 600; font-size: 1em;"><span id="counter">{{ counter }}</span></b></asdf><b style="font-weight: 600; font-size: 1em;"></b></p> -->
-
-				        <p style="line-height: 19px; font-size: .90em; margin-top: -20px; font-weight: 400;">
+                <p style="line-height: 19px; font-size: .90em; margin-top: -20px; font-weight: 400;">
                   <span style="height: 5px; line-height: 5px; background-color: #0aca4a; padding: 4px 5px; font-size: 1em; border-radius: 3px; padding-right: 0px; margin-right: 5px;">
                     <b style="font-weight: 600; font-size: 1em;">
                       <span id="counter">{{ counter }}</span> votes say so.</b>
                   </span> Agree? Increase the counter:
-                  <b style="font-weight: 600; font-size: 1em;"></b></p>
+                  <b style="font-weight: 600; font-size: 1em;"></b>
+                </p>
 
-                <!-- <input type="submit" value="Ugly!" name="subscribe" class="button my-btn-style" style="margin-left: 0;"> -->
-                <input type="submit" id="increment-btn" value='Ducks Are Cute Button' name="subscribe" class="button my-btn-style" style="margin-left: 0;">
+                <input type="submit" id="increment-btn" value='+1 Ducks Are Cute Button' name="subscribe" class="button my-btn-style" style="margin-left: 0;">
                 <svg style="height: 40px; display: inline; margin-left: 10px; margin-bottom: 5px;" fill="#000000" version="1.1"
                       xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                       viewBox="0 0 512 512" xml:space="preserve">
@@ -149,7 +125,80 @@
                         </g>
                       </g>
                     </g>
-                  </svg>
+                </svg>
+
+                <br><span class="new-font-color" style="display: block; margin-top: 10px; font-size: .75em !important;"><b style="font-weight: 600; font-size: 1em;">Disclaimer: </b> the button WILL quack!</span>
+
+                  <div class="image-3">
+                      <img id="mobile-honey-comb" class="mobile-only" style="height: 250px; margin-top: 15px; position: absolute; left: -20vw; opacity: .5; user-select: none;" src="{{ url_for('static', filename='images/honeycomb.png') }}" alt="image">
+                  </div>
+
+            </div>
+
+            <!-- DESKTOP VIEW MAIN CONTENT -->
+            <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-10 order-lg-1 order-1 aos-init aos-animate" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" style="width: 460px; padding-left: 55px;" id="main-content">
+              <div class="content big-left-col" style="margin-top: 250px; padding: 0;">
+
+                <div class="image-3">
+                    <img id="mobile-buzz-bee" class="mobile-only" style="height: 115px; position: absolute; margin-left: 40vw; margin-top: -130px; user-select: none; cursor: pointer; transform: rotate(-12deg) !important;" src="{{ url_for('static', filename='images/bee-official-path.png') }}" alt="image">
+                </div>
+  
+                <!-- <h2 class="new-font-color">Ducks are cute<span style="font-size: .25em !important; font-weight: 300;" class="new-font-color">.com</span> </h2> -->
+                <h2 class="new-font-color">are ducks cute?<span style="font-size: .25em !important; font-weight: 300;" class="new-font-color"></span> </h2>
+                <!-- <h2 class="new-font-color">Global Counter: <h2 id="counter">{{ counter }}</h2></h2> -->
+
+				        <!-- <p style="line-height: 19px !important; font-size: .90em; width: 80%; width: 317px; background-color: #d1ffc5; padding: 16px 20px 15px 20px; border-radius: 6px; margin-bottom: 0px; font-weight: 400;"><asdf style="height: 5px; line-height: 5px; padding: 0 2px; font-size: 1em; line-height: 19px !important;">GLOBAL DUCKS-ARE-CUTE COUNTER: </asdf><b style="font-weight: 600; font-size: 1em; line-height: 19px !important;"><span id="counter">{{ counter }}</span></b></p> -->
+
+				        <!-- <p style="line-height: 19px; font-size: .90em; margin-top: -20px; font-weight: 400;"><asdf style="height: 5px; line-height: 5px; background-color: #0aca4a; padding: 4px 5px; font-size: 1em; border-radius: 3px;">GLOBAL DUCKS-ARE-CUTE COUNTER: <b style="font-weight: 600; font-size: 1em;"><span id="counter">{{ counter }}</span></b></asdf><b style="font-weight: 600; font-size: 1em;"></b></p> -->
+
+				        <p style="line-height: 19px; font-size: .90em; margin-top: -20px; font-weight: 400;">
+                  <span style="height: 5px; line-height: 5px; background-color: #0aca4a; padding: 4px 5px; font-size: 1em; border-radius: 3px; padding-right: 0px; margin-right: 5px;">
+                    <b style="font-weight: 600; font-size: 1em;">
+                      <span id="counter">{{ counter }}</span> votes say so.</b>
+                  </span> Agree? Increase the counter:
+                  <b style="font-weight: 600; font-size: 1em;"></b></p>
+
+                <!-- <input type="submit" value="Ugly!" name="subscribe" class="button my-btn-style" style="margin-left: 0;"> -->
+                <input type="submit" id="increment-btn" value='+1 Ducks Are Cute Button' name="subscribe" class="button my-btn-style" style="margin-left: 0;">
+                <svg style="height: 40px; display: inline; margin-left: 10px; margin-bottom: 5px;" fill="#000000" version="1.1"
+                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 512 512" xml:space="preserve">
+                    <!-- Rotate 90° clockwise around the origin, then translate into view -->
+                    <g transform="translate(512 0) rotate(90)">
+                      <g>
+                        <g>
+                          <path d="M484.964,265.749c-12.465-11.8-28.938-18.052-46.298-17.532c-17.172,0.488-33.327,7.454-45.489,19.616l-22.083,22.084
+                            c-13.001-71.913-47.195-137.09-99.645-189.54C219.871,48.798,155.074,14.481,84.066,1.137c-19.2-3.61-38.834,1.471-53.862,13.936
+                            C15.211,27.511,6.612,45.817,6.612,65.299c0,31.362,22.215,58.312,52.823,64.082c82.466,15.544,149.317,75.261,175.291,153.31
+                            l-14.887-14.887c-25.301-25.299-66.563-26.13-91.98-1.844c-13.027,12.444-20.201,29.208-20.201,47.205
+                            c0,17.431,6.788,33.817,19.113,46.143L260.38,492.918C273.102,505.64,289.812,512,306.523,512c16.71,0,33.42-6.361,46.144-19.081
+                            L486.276,359.31c12.565-12.566,19.35-29.274,19.107-47.045C505.137,294.501,497.886,277.981,484.964,265.749z M471.849,344.883
+                            L338.24,478.492c-17.489,17.489-45.946,17.489-63.435,0L141.196,344.883c-8.473-8.472-13.139-19.737-13.139-31.718
+                            c0-12.372,4.934-23.896,13.892-32.455c8.453-8.076,19.483-12.085,30.602-12.085c11.857,0,23.816,4.559,32.859,13.605
+                            l40.758,40.759c3.135,3.133,7.932,3.887,11.875,1.859c3.941-2.025,6.125-6.364,5.402-10.735
+                            C246.397,210.988,165.929,128.694,63.21,109.334c-20.975-3.954-36.2-22.473-36.2-44.034c0-13.393,5.911-25.976,16.217-34.527
+                            c10.34-8.577,23.853-12.073,37.07-9.586c66.953,12.582,128.065,44.953,176.725,93.616
+                            c54.079,54.078,87.586,122.489,96.899,197.839c0.478,3.868,3.12,7.127,6.806,8.394c3.687,1.269,7.772,0.324,10.529-2.433
+                            l36.345-36.345c17.461-17.463,45.875-18.222,63.338-1.694c8.887,8.414,13.875,19.771,14.042,31.981
+                            C485.151,324.761,480.486,336.246,471.849,344.883z"/>
+                        </g>
+                      </g>
+
+                      <g>
+                        <g>
+                          <path d="M302.691,457.773l-74.153-74.154c-3.984-3.98-10.441-3.982-14.426,0c-3.983,3.984-3.983,10.443,0,14.426l74.153,74.154
+                            c1.992,1.991,4.601,2.988,7.212,2.988c2.61,0,5.221-0.995,7.213-2.988C306.674,468.215,306.674,461.756,302.691,457.773z"/>
+                        </g>
+                      </g>
+
+                      <g>
+                        <g>
+                          <path d="M203.598,358.503l-5.665-5.665c-3.985-3.982-10.442-3.982-14.426,0c-3.983,3.984-3.983,10.443,0,14.426l5.665,5.665
+                            c1.992,1.991,4.601,2.988,7.212,2.988s5.22-0.997,7.213-2.988C207.581,368.945,207.581,362.486,203.598,358.503z"/>
+                        </g>
+                      </g>
+                    </g>
+                </svg>
               
                 <br><span class="new-font-color" style="display: block; margin-top: 5px; font-size: .75em !important;"><b style="font-weight: 600; font-size: 1em;">Disclaimer: </b> the button WILL quack!</span>
 
